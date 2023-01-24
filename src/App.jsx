@@ -15,7 +15,7 @@ function App() {
 			<button onClick={() => fetchExcuse('party')}>Party</button>
 			<button onClick={() => fetchExcuse('family')}>Family</button>
 			<button onClick={() => fetchExcuse('office')}>Office</button>
-			{excuse && <p>{excuse}</p>}
+			{<p>{excuse}</p>}
 		</div>
 	);
 }
