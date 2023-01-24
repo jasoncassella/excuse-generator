@@ -1,9 +1,9 @@
-import { useState} from 'react';
+import { useState } from 'react';
 
 function App() {
-	const [excuse, setExcuse] = useState('')
+	const [excuse, setExcuse] = useState('');
 
-	const fetchExcuse = (category) => {
+	const fetchExcuse = category => {
 		fetch(`https://excuser-three.vercel.app/v1/excuse/${category}`)
 			.then(res => res.json())
 			.then(data => setExcuse(data[0].excuse));
